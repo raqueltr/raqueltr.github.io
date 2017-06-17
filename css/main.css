@@ -39,23 +39,110 @@ h1 {
 
 
 /*******************************************
-Jumbotron
+Hero
 *******************************************/
-.jumbotron {
+.hero {
   background-color: white;
+  outline: 1px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
 }
-.jumbotron h1 {
-  font-size: 2em;
-  line-height: 2em;
+
+.header {
+  max-width: 90%;
+
+}
+
+.hero h1 {
+  font-size: 1.4em;
+  line-height: 2.3em;
   text-shadow: 1px 1px 0px #fff;
 }
 
-.jumbotron p {
-  font-size: 1.1em;
-  line-height: 0.4em;
+spam {
+  color: #aaa;
+  font-size: 1rem;
 }
 
-img {
-  margin-top: 1em;
+.hero p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.hero img {
   border-radius: 50%;
+  max-width: 100%;
+}
+
+.headshot{
+  width: 250px;
+  height: 249px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 1s, box-shadow 1s;
+  background-image: url(../img/raquel_hover.jpg);
+}
+
+.headshot img {
+  transition: opacity 2s;
+}
+
+.headshot:hover{
+  transform: rotate(360deg);
+  box-shadow: 0px 0px 50px 10px #aeeed0;
+}
+
+.headshot:hover img {
+  opacity: 0;
+}
+
+/*******************************************
+Navbar
+*******************************************/
+
+
+
+
+
+/**********************************
+Media Queries
+***********************************/
+
+/*Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)  */
+@media (max-width: 576px) {
+}
+
+/* Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) {
+.hero {
+  margin-top: 0px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .hero img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 350px;
+    height: 348px;
+  }
+
+.headshot{
+  width: 350px;
+  height: 348px;
+  background-image: url(../img/raquel_hover_ms.jpg);
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 1.6em;
 }
