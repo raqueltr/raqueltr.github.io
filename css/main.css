@@ -24,7 +24,7 @@ body {
 }
 
 .container{
-  padding-left: 30px;
+  margin: auto;
 }
 
 /* headings */
@@ -32,8 +32,8 @@ body {
 h1 {
   margin: 0;
   color: #4e6365;
-  font-size: 2em;
-  line-height: 2em;
+  font-size: 1.4em;
+  line-height: 2.3em;
   font-weight: bold;
   }
 
@@ -41,20 +41,16 @@ h1 {
 /*******************************************
 Hero
 *******************************************/
+
 .hero {
   background-color: white;
-  outline: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
+  margin: 30px 10px 0;
 }
 
-.header {
-  max-width: 90%;
-
-}
 
 .hero h1 {
   font-size: 1.4em;
@@ -80,8 +76,7 @@ spam {
 .headshot{
   width: 250px;
   height: 249px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border-radius: 50%;
   overflow: hidden;
   transition: transform 1s, box-shadow 1s;
@@ -102,9 +97,13 @@ spam {
 }
 
 /*******************************************
-Navbar
+Section
 *******************************************/
 
+.section {
+  border-top: 2px dashed #aaa;
+  padding: 1em 0;
+}
 
 
 
@@ -128,6 +127,7 @@ Media Queries
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
   .hero img {
     border-radius: 50%;
     max-width: 100%;
@@ -144,5 +144,11 @@ Media Queries
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .hero h1 {
-    font-size: 1.6em;
+    font-size: 2em;
+    line-height: 2
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 2
 }
