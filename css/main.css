@@ -9,6 +9,7 @@ GENERAL
   padding: 0;
   border: 0;
   line-height: inherit;
+
 }
 
 html, body {
@@ -102,10 +103,32 @@ Section
 
 .section {
   border-top: 2px dashed #aaa;
-  padding: 1em 0;
+  padding-bottom: 3em;
+  }
+
+/*******************************************
+Portfolio
+*******************************************/
+
+
+.portfolio .img-responsive {
+    margin: 0 auto;
+    }
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.thumbnail {
+    align-items: center;
+    height: 100%;
 }
 
-
+.thumbnail img {
+  max-height:300px;
+  max-width: 100%;
+}
 
 
 /**********************************
