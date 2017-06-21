@@ -135,17 +135,17 @@ Robot
 *******************************************/
 
 .vertical-center-row {
-    min-height: 250px;
+    min-height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .robot {
-  height:250px;
+  height:150px;
   width:50px;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: auto;
+  padding: auto;
   list-style: none;
   position: relative;
 }
@@ -158,6 +158,9 @@ Robot
   border-top: 5px solid #777;
   margin: 0 auto;
   padding: 0 auto;
+  animation: redbeep 1s ease infinite alternate ;
+
+
 }
 
 .brain{
@@ -169,6 +172,7 @@ Robot
   width: 50px;
   border-radius: 20px 20px 0 0;
   border-bottom:10px double #666;
+  animation: eyes 3s ease infinite alternate ;
 
   }
 
@@ -179,6 +183,7 @@ Robot
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-radius: 5px 5px 30px 30px;
+  animation: torso 3s ease infinite alternate ;
 }
 
 .armleft {
@@ -192,6 +197,8 @@ Robot
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-radius: 30px 30px 30px 30px;
+  animation: armleft 3s ease infinite alternate ;
+
 }
 
 .armright{
@@ -205,6 +212,7 @@ Robot
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-radius: 30px 30px 30px 30px;
+  animation: armright 3s ease infinite alternate ;
 }
 
 .foot{
@@ -216,6 +224,87 @@ Robot
   text-align: center;
   margin: 0 auto;
   padding: 0 auto;
+  }
+
+@keyframes redbeep {
+  from {
+    border-top: 5px solid #777;
+    }
+
+   to {
+     border-top: 5px solid #f5153a;
+   }
+}
+
+@keyframes eyes {
+  from {
+    background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #aeeed0;
+    background-size: 33% 100%;
+    border-bottom:10px double #666;
+    height: 50px;
+
+    }
+
+   to {
+     background: -webkit-radial-gradient(circle, white 15%, transparent 60%), red;
+     border-bottom:10px double #fff;
+     height: 55px;
+
+
+     }
+}
+
+@keyframes torso  {
+  from {
+    width:50px;
+    border-top: 70px solid #aeeed0;
+
+    }
+
+   to {
+     width:50px;
+     border-top: 70px solid red;
+      margin-top: 5px;
+
+     }
+}
+
+
+@keyframes armleft  {
+  from {
+     -webkit-transform: rotateZ(0deg);
+     background-color: #aeeed0;
+     border-top: 10px solid #aeeed0;
+    }
+
+   to {
+      -webkit-transform: rotateY(60deg);
+       transform-origin:right;
+      -moz-transform: rotateZ(60deg);
+      -ms-transform: rotateZ(60deg);
+      transform: rotateZ(60deg);
+      background-color: red;
+      border-top: 10px solid red;
+       }
+}
+
+
+@keyframes armright  {
+  from {
+     -webkit-transform: rotateZ(0deg);
+     background-color: #aeeed0;
+     border-top: 10px solid #aeeed0;
+    }
+
+   to {
+      -webkit-transform: rotateZ(-60deg);
+       transform-origin:left;
+      -moz-transform: rotateZ(-60deg);
+      -ms-transform: rotateZ(-60deg);
+      transform: rotateZ(-60deg);
+      background-color: red;
+      border-top: 10px solid red;
+       }
 }
 
 
