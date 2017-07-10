@@ -22,7 +22,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
   </head>
-  <body>
+  <body  data-spy="scroll" data-target="#mainNavBar">
     <!-- navbar-->
       <nav class=" navbar navbar-default navbar-fixed-top">
           <div class="container">
@@ -39,10 +39,10 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="mainNavBar">
-              <ul class="nav navbar-nav">
+              <ul class="nav navigation navbar-nav" role="tablist">
                 <li class="active"><a href="#about">About</a></li>
-                <li ><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skill">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             </div><!-- /.navbar-collapse -->
@@ -60,11 +60,11 @@
         <h1> Raquel Travincas  <spam>(Designer/ Front-End Dev)</spam></h1>
 
         <p>I am currently location-undecided, mostly drawing dreams, discovering places and learning ancient and contemporary prowess.
-         Also, I'm a bitcoin enthusiast! Check it out my Thesis: </p>
+         Also, I'm a bitcoin enthusiast! Check it out the abstract of my Thesis: </p>
 
         <p>The rise of the Cloudworker: Work, Live, Learn and Play converging in Architecture</p>
-       <button type="button" class="btn button">Download My CV</button>
-       <button type="button" class="btn button">Download My Thesis</button>
+        <a href="pdf/CV_Raquel_Travincas.pdf" target="_blank"><button type="button" class="btn button">Download My CV</button></a>
+        <a href="pdf/Abstract_RaquelTravincasPinto.pdf" target="_blank"><button type="button" class="btn button"> Master thesis abstract </button></a>
       </div>
     </div>
    <!-- /jumbotron -->
@@ -76,26 +76,33 @@
   <div class="row display-flex">    <!-- row web dev -->
         <div class= " col-xs-12 col-sm-12 col-md-12 col-lg-12 clearfix">
       <header><h3>Webdev Portfolio</h3> </header>
-      <p> I am currently working on the startup Looks <p/>
-      <p> You can find more information <a href="https://github.com/raqueltr/looks" target="_blank">here</a><p/>
+      <p> I am currently developing a concept of a gamified fashion platform that incentivises participation with Blockchain token.
+        Tokens are used to bet on Looks and redistributed accordingly to the ranking. </p>
+      <!--<p> You can find more information <a href="https://github.com/raqueltr/looks" target="_blank" class="btn button disabled">here</a><p/> -->
       </div>
 
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 clearfix">
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 clearfix">
       <div class="thumbnail">
         <img src="img/looks_ui_1.png" alt="Looks user interface">
-        <div class= "caption"> <p>Daily Voting</p> </div>
+        <div class= "caption"> <p>User profile</p> </div>
       </div>
     </div>
-      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-      <div class="thumbnail">
-          <img src="img/looks_ui_2.png" alt="Looks user interface">
-          <div class= "caption"> <p>Vote 5 looks </p> </div>
-      </div>
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 clearfix">
+    <div class="thumbnail">
+      <img src="img/looks_ui_2.png" alt="Looks user interface">
+      <div class= "caption"> <p>User profile - looks added</p> </div>
     </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+  </div>
+      <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
       <div class="thumbnail">
           <img src="img/looks_ui_3.png" alt="Looks user interface">
-          <div class= "caption"> <p>Vote 10 looks </p> </div>
+          <div class= "caption"> <p>Daily Voting </p> </div>
+      </div>
+    </div>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+      <div class="thumbnail">
+          <img src="img/looks_ui_4.png" alt="Looks user interface">
+          <div class= "caption"> <p>Vote 50 looks </p> </div>
       </div>
     </div>
   </div>  <!-- /row web dev -->
@@ -148,86 +155,30 @@
 
 
 <!-- skills -->
-<div class="container section">
+<div class="container section skills" id="skill">
   <div class="row">
-     <h1> Skills </h1>
-  </div>
+     <h1 > Skills </h1>
   <div class="container">
   <div class="row ">
+    <div class="col-sm-6 col-md-6 col-lg-6 vertical-center-row " >
+      <img src="img/skills.jpg" alt="drawing with skills photohop, illustrator, in design, html5, css3, javascript, artlantis, sketch, sketchup, bitcoin, pepememe, pattern, ui, revit, autocad, bootstrap, github" />
+    </div>
     <div class="col-sm-6 col-md-6 col-lg-6 vertical-center-row">
-      <p class="text-center"> Photoshop, Illustrator, HTML5, CSS, JQuery, Bootstrap, Javascript, Skecth, SketchUp, AutoCad, Revit </p>
-  </div>
-      <div class="col-sm-6 col-md-6 col-lg-6 vertical-center-row">
-     <ul class="robot">
+      <ul class="robot">
       <li class="beep"></li>
       <li class="brain"></li>
       <li class="armleft"></li>
       <li class="armright"></li>
       <li class="torso"></li>
       <li class="foot"></li>
-    </ul>
-  </div>
-</div>
+      </ul>
     </div>
+</div>
+</div>
+</div>
 </div>  <!-- /container section -->
 <!-- /skills -->
 
-
-<!-- Blog Ideas -->
-<div class="container blog section " id="blog">
-<div class="row">
-<h1 >Blog</h1>
-<p> Inside my mind: ideas, insights and dreams.
-<div class="row col-sm-12 col-md-12 col-lg-12 ">
-  <div class=" col-sm-12 col-md-6 col-lg-3 ">
-    <div class="card ">
-      <img class="" src="" alt="">
-      <div class="card-block">
-        <h4 class="card-title">The autonomous Coworking Space: Creating Equitable Communities</h4>
-        <p class="card-text">key words: coworking, ethereum</p>
-        </div>
-    </div>
-  </div>
-
-
-  <div class="col-sm-12 col-md-6 col-lg-3">
-    <div class="card ">
-      <img class="" src="" alt="">
-      <div class="card-block">
-        <h4 class="card-title">Democracy: Cloud or Country ?</h4>
-        <p class="card-text">key words: coworking, ethereum</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-12 col-md-6 col-lg-3 ">
-    <div class="card ">
-      <img class="" src="" alt="">
-      <div class="card-block">
-        <h4 class="card-title">Democracy on the workplace: From Factory to Coworking</h4>
-        <p class="card-text">key words: coworking, ethereum</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="col-sm-12 col-md-6 col-lg-3 ">
-    <div class="card ">
-      <img class="" src="" alt="">
-      <div class="card-block ">
-        <h4 class="card-title">Close the door: Children Book</h4>
-        <p class="card-text">key words: coworking, ethereum</p>
-      </div>
-    </div>
-</div>
-  </div>
-
-<div class="col-sm-12 col-md-12 col-lg-12 clearfix">
-  <a href="blog.html"> <button type="button" class="btn button">Got to blog and Read!</a></button>
-</div>
-</div>
-</div>
-<!-- /blog -->
 
 <!-- Contact -->
 <div class="section container-fluid contact clearfix col-sm-12 col-md-12 col-lg-12" id="contact" >
@@ -237,43 +188,7 @@
     <div class="col-sm-12 col-md-12 col-lg-12 clearfix ">
         <p> I'm currently living in Coimbra, Portugal but free to relocate. Please, get in touch! </p>
     </div>
-
-    <iframe src="php/index.php"></iframe>
-
-<!--
-     <div class="col-sm-12 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 clearfix ">
-       <form method="post" action="php/index.php">
-         <div class="form-group">
-           <label for="name">Name</label>
-           <input name="name" type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter name">
-           </div>
-           <?php echo "<p class='text-danger'>$errName</p>";?>
-         <div class="form-group">
-           <label for="email">Email address</label>
-           <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-           </div>
-           <?php echo "<p class='text-danger'>$errEmail</p>";?>
-         <div class="form-group">
-           <label for="message">Message</label>
-           <textarea name="message" class="form-control" id="exampleTextarea" rows="3" placeholder="Enter message..."></textarea>
-         </div>
-         <?php echo "<p class='text-danger'>$errMessage</p>";?>
-         <div class="form-group">
-           <label for="human"> 2 + 2 ? </label>
-           <input name="human" type="text" class="form-control" id="human" aria-describedby="name" placeholder="Your answer">
-           </div>
-           <?php echo "<p class='text-danger'>$errHuman</p>";?>
-         <div class="form-group">
-           <div class="col-sm-10 col-sm-offset-2">
-             <?php echo $result; ?>
-           </div>
-         </div>
-
-       <button type="submit" class="btn button">Submit</button>
-       </form>
-     </div>
--->
-      <div class="col-sm-12 col-md-12 col-lg-12 clearfix ">
+        <div class="col-sm-12 col-md-12 col-lg-12 clearfix ">
         <p> E-mail: raqueltravincas @ [gmail] dot com </p>
         <p> Cel: [+ 351] 9670- 54331 </p>
       </div>
@@ -290,6 +205,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
